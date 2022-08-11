@@ -33,7 +33,6 @@ main {
   justify-content: space-evenly;
   flex-flow: row wrap;
   width: 100%
-  /* margin: 0 auto; */
 }
 
 #evaluation-form {
