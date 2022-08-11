@@ -21,6 +21,7 @@
   align-self: center;
   display: flex;
   flex-direction: column;
+  text-align: right;
 }
 
 #login {
@@ -29,17 +30,17 @@
 
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-flow: row wrap;
-  width: 70%;
-  margin: 0 auto;
+  width: 100%
+  /* margin: 0 auto; */
 }
 
 #evaluation-form {
   width: 675px;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-evenly;
+  flex-flow: column nowrap;
+  justify-content: space-between;
   align-items: center;
   align-content: space-around;
   font-size: 30px;
@@ -48,6 +49,7 @@ main {
 main img {
   height: 500px;
   align-self: flex-start;
+  text-align: right;
 }
 
 #name-lastname {
