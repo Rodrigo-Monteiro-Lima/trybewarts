@@ -88,3 +88,14 @@ main img {
 #select {
   display: flex;
 }
+
+#form-data {
+  width: 675px;
+  display: none;
+}
+
+#info-container {
+  width: 60%;
+  margin-left: 200px;
+  margin-top: 40px;
+}

@@ -26,3 +26,47 @@ function counter(e) {
 }
 
 textarea.addEventListener('keyup', counter);
+
+const listOfSubject = [];
+function subjectItems() {
+  const subject = document.querySelectorAll('.subject');
+  for (let index = 0; index < subject.length; index += 1) {
+    if (subject[index].checked === true) {
+      listOfSubject.push(subject[index].value);
+    }
+  }
+}
+
+const form = document.querySelector('#evaluation-form');
+const formData = document.querySelector('#form-data');
+function changeDisplay() {
+  form.style.display = 'none';
+  formData.style.display = 'block';
+}
+
+const nameData = document.querySelector('#name-data');
+const emailData = document.querySelector('#email-data');
+const houseData = document.querySelector('#house-data');
+const familyData = document.querySelector('#family-data');
+const subjectData = document.querySelector('#subject-data');
+const avaliationData = document.querySelector('#avaliation-data');
+const observation = document.querySelector('#observation-data');
+btnSubmit.addEventListener('click', (event) => {
+  event.preventDefault();
+  const name = document.querySelector('#input-name').value;
+  const lastName = document.querySelector('#input-lastname').value;
+  const email = document.querySelector('#input-email').value;
+  const house = document.querySelector('#house').value;
+  const family = document.querySelector('input[name="family"]:checked').value;
+  const rate = document.querySelector('input[name="rate"]:checked').value;
+  const text = textarea.value;
+  subjectItems();
+  nameData.innerHTML = `${name} ${lastName}`;
+  emailData.innerHTML = email;
+  houseData.innerHTML = house;
+  familyData.innerHTML = family;
+  subjectData.innerHTML = listOfSubject.join(', ');
+  avaliationData.innerHTML = rate;
+  observation.innerHTML = text;
+  changeDisplay();
+});
