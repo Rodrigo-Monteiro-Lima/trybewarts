@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-size: 100%;
 }
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -13,7 +14,6 @@
 .header h1 {
   font-size: 30px;
   align-self: center;
-  font-weight: bold;
   color: white;
 }
 
