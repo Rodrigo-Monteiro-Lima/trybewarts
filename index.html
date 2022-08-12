@@ -79,7 +79,7 @@
                 name="family"
                 value="Frontend"
                 id="family1"
-              />Família Frontend
+                required/>Família Frontend
             </label>
             <label for="family2">
               <input
@@ -87,7 +87,7 @@
                 name="family"
                 value="Backend"
                 id="family2"
-              />Família Backend
+                required/>Família Backend
             </label>
             <label for="family3">
               <input
@@ -95,7 +95,7 @@
                 name="family"
                 value="FullStack"
                 id="family3"
-              />Família FullStack
+                required/>Família FullStack
             </label>
           </div>
           <div id="checkbox">
@@ -110,7 +110,7 @@
                   value="HoFs"
                   class="subject"
                   id="hofs"
-                />HoFs
+                  required/>HoFs
               </label>
               <label for="jest">
                 <input
@@ -119,7 +119,7 @@
                   value="Jest"
                   class="subject"
                   id="jest"
-                />Jest
+                  required/>Jest
               </label>
               <label for="promises">
                 <input
@@ -128,7 +128,7 @@
                   value="Promises"
                   class="subject"
                   id="promises"
-                />Promises
+                  required/>Promises
               </label>
               <label for="react">
                 <input
@@ -137,7 +137,7 @@
                   value="React"
                   class="subject"
                   id="react"
-                />React
+                  required/>React
               </label>
               <label for="sql">
                 <input
@@ -146,7 +146,7 @@
                   value="SQL"
                   class="subject"
                   id="sql"
-                />SQL
+                  required/>SQL
               </label>
               <label for="python">
                 <input
@@ -155,7 +155,7 @@
                   value="Python"
                   class="subject"
                   id="python"
-                />Python
+                  required/>Python
               </label>
             </div>
           </div>
@@ -164,34 +164,34 @@
           <label for="" id="label-rate">Como você avalia a Trybewarts?</label
           ><br /><br />
           <label for="rate1">
-            <input type="radio" name="rate" value="1" id="rate1" />1
+            <input type="radio" name="rate" value="1" id="rate1" required/>1
           </label>
           <label for="rate2">
-            <input type="radio" name="rate" value="2" id="rate2" />2
+            <input type="radio" name="rate" value="2" id="rate2" required/>2
           </label>
           <label for="rate3">
-            <input type="radio" name="rate" value="3" id="rate3" />3
+            <input type="radio" name="rate" value="3" id="rate3" required/>3
           </label>
           <label for="rate4">
-            <input type="radio" name="rate" value="4" id="rate4" />4
+            <input type="radio" name="rate" value="4" id="rate4" required/>4
           </label>
           <label for="rate5">
-            <input type="radio" name="rate" value="5" id="rate5" />5
+            <input type="radio" name="rate" value="5" id="rate5" required/>5
           </label>
           <label for="rate6">
-            <input type="radio" name="rate" value="6" id="rate6" />6
+            <input type="radio" name="rate" value="6" id="rate6" required/>6
           </label>
           <label for="rate7">
-            <input type="radio" name="rate" value="7" id="rate7" />7
+            <input type="radio" name="rate" value="7" id="rate7" required/>7
           </label>
           <label for="rate8">
-            <input type="radio" name="rate" value="8" id="rate8" />8
+            <input type="radio" name="rate" value="8" id="rate8" required/>8
           </label>
           <label for="rate9">
-            <input type="radio" name="rate" value="9" id="rate9" />9
+            <input type="radio" name="rate" value="9" id="rate9" required/>9
           </label>
           <label for="rate10">
-            <input type="radio" name="rate" value="10" id="rate10" />10
+            <input type="radio" name="rate" value="10" id="rate10" required/>10
           </label>
         </section>
         <section id="txtarea">
@@ -204,7 +204,7 @@
             rows="7"
             maxlength="500"
             placeholder="Escreva seu comentário aqui"
-          ></textarea>
+            required></textarea>
           <div id="counter">500</div>
         </section>
         <section id="validation">
@@ -217,12 +217,38 @@
           <button type="submit" id="submit-btn" disabled>Enviar</button>
         </section>
       </form>
+      <form action="" id="form-data">
+        <div id="info-container">
+          <div>
+            <label for="">Nome: <span id="name-data"></span></label>
+          </div>
+          <div>
+            <label for="">Email: <span id="email-data"></span></label>
+          </div>
+          <div>
+            <label for="">Casa: <span id="house-data"></span></label>
+          </div>
+          <div>
+            <label for="">Família: <span id="family-data"></span></label>            
+          </div>
+          <div>
+            <label for="">Matérias: <span id="subject-data"></span></label>
+          </div>
+          <div>
+            <label for="">Avaliação: <span id="avaliation-data"></span></label>
+          </div>
+          <div>
+            <label for="">Observações: <span id="observation-data"></span></label>
+          </div>
+        </div>
+      </form>
       <img
         src="/images/trybewarts-colored.svg"
         alt=""
         id="trybewarts-forms-logo"
       />
     </main>
+
     <footer>Direitos reservados à Trybewarts©</footer>
     <script src="script.js"></script>
   </body>
