@@ -9,7 +9,7 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
-  height: 100px;
+  height: 65px;
 }
 
 .header h1 {
@@ -21,12 +21,8 @@
 .trybewarts-login {
   align-self: center;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   text-align: right;
-}
-
-#login {
-  align-self: flex-end;
 }
 
 main {
@@ -34,16 +30,15 @@ main {
   justify-content: space-evenly;
   flex-flow: row wrap;
   width: 100%;
-  height: 1000px;
 }
 
 #evaluation-form {
   width: 675px;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  align-content: space-around;
-  font-size: 30px;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
 main img {
@@ -54,35 +49,36 @@ main img {
 
 #name-lastname {
   display: flex;
+  justify-content: space-between;
 }
 
 #email-select {
   display: flex;
+  justify-content: space-between;
 }
 
 #radio-checkbox {
   display: flex;
-  flex-flow: row wrap;
-  height: 400px;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 #radio {
-  width: 40%;
+  width: 30%;
   display: flex;
   flex-direction: column;
 }
 
 #checkbox {
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
 
 #input-content {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 70%;
 }
 
 #select {
@@ -92,10 +88,147 @@ main img {
 #form-data {
   width: 675px;
   display: none;
+  font-size: 20px;
+  height: 525px;
 }
 
 #info-container {
   width: 60%;
   margin-left: 200px;
   margin-top: 40px;
+}
+
+#password , #email {
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  margin-left: 7px;
+  border: 0;
+}
+
+#login {
+  width: 100px;
+  height: 25px;
+  margin-left: 7px;
+  margin-right: 7px;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgb(184, 248, 36);
+}
+
+footer {
+  background-color: rgb(10, 71, 60);
+  text-align: center;
+  width: 100%;
+  color: white;
+  height: 45px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+#container {
+  width: 470px;
+}
+
+#txtarea {
+  display: flex;
+  flex-direction: column;
+}
+
+#counter {
+  position: absolute;
+  bottom: 105px;
+  left: 593px;
+}
+
+#submit-btn {
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgb(184, 248, 36);
+  border: 0;
+  color: black;
+  height: 30px;
+}
+
+#name-email-select {
+  margin-bottom: 10px;
+}
+
+#avaliation {
+  margin-bottom: 10px;
+}
+
+#validation {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+#house {
+  width: 170px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+#name-form {
+  margin-bottom: 10px;
+}
+
+#radio label {
+  margin-bottom: 10px;
+}
+
+#checkbox label {
+  margin-bottom: 10px;
+}
+
+#label-content {
+  line-height: 1.5;
+}
+
+#input-name , #input-lastname , #input-email {
+  height: 30px;
+  border-radius: 5px;
+  border-color: rgb(119, 113, 113);
+}
+
+p {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.textarea {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#form-data div {
+  margin-bottom: 10px;
+}
+
+#textarea {
+  resize: none;
+  cursor: pointer;
+}
+
+input , button , #label-infos {
+  cursor: pointer;
+}
+
+#avaliation label , #input-content label {
+  cursor: pointer;
+}
+
+#radio label:not( #label-family ) {
+  cursor: pointer;
 }
