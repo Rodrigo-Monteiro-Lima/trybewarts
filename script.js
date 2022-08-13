@@ -37,6 +37,26 @@ function subjectItems() {
   }
 }
 
+let family = '';
+function familyItem() {
+  const familys = document.querySelectorAll('.family');
+  for (let index = 0; index < familys.length; index += 1) {
+    if (familys[index].checked === true) {
+      family = familys[index].value;
+    }
+  }
+}
+
+let rate = '';
+function rateEvaluation() {
+  const rates = document.querySelectorAll('.rate');
+  for (let index = 0; index < rates.length; index += 1) {
+    if (rates[index].checked === true) {
+      rate = rates[index].value;
+    }
+  }
+}
+
 const form = document.querySelector('#evaluation-form');
 const formData = document.querySelector('#form-data');
 function changeDisplay() {
@@ -49,7 +69,7 @@ const emailData = document.querySelector('#email-data');
 const houseData = document.querySelector('#house-data');
 const familyData = document.querySelector('#family-data');
 const subjectData = document.querySelector('#subject-data');
-const avaliationData = document.querySelector('#avaliation-data');
+const evaluationData = document.querySelector('#evaluation-data');
 const observation = document.querySelector('#observation-data');
 btnSubmit.addEventListener('click', (event) => {
   event.preventDefault();
@@ -57,8 +77,8 @@ btnSubmit.addEventListener('click', (event) => {
   const lastName = document.querySelector('#input-lastname').value;
   const email = document.querySelector('#input-email').value;
   const house = document.querySelector('#house').value;
-  const family = document.querySelector('input[name="family"]:checked').value;
-  const rate = document.querySelector('input[name="rate"]:checked').value;
+  familyItem();
+  rateEvaluation();
   const text = textarea.value;
   subjectItems();
   nameData.innerHTML = `${name} ${lastName}`;
@@ -66,7 +86,7 @@ btnSubmit.addEventListener('click', (event) => {
   houseData.innerHTML = house;
   familyData.innerHTML = family;
   subjectData.innerHTML = listOfSubject.join(', ');
-  avaliationData.innerHTML = rate;
+  evaluationData.innerHTML = rate;
   observation.innerHTML = text;
   changeDisplay();
 });

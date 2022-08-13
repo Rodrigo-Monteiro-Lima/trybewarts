@@ -139,11 +139,12 @@ main img {
 }
 
 #password , #email {
-  width: 100px;
+  width: 200px;
   height: 25px;
   border-radius: 5px;
   margin-left: 7px;
   border: 0;
+  padding-left: 5px;
 }
 
 #login {
@@ -207,7 +208,7 @@ footer {
   width: 170px;
 }
 
-#avaliation {
+#evaluation {
   margin-bottom: 10px;
   display: flex;
 }
@@ -358,6 +359,7 @@ hr {
   #select select {
     width: 500px;
     height: 40px;
+    font-size: 30px;
   }
 
   #input-email {
@@ -383,7 +385,7 @@ hr {
     width: 100%;
   }
 
-  #avaliation {
+  #evaluation {
     font-size: 30px;
     flex-direction: column;
   }
@@ -394,6 +396,7 @@ hr {
 
   #validation {
     font-size: 30px;
+    margin-bottom: 30px;
   }
 
   #submit-btn {
@@ -410,9 +413,14 @@ hr {
     font-size: 25px;
   }
 
-  #label-content , #input-content {
+  #label-content {
     width: 100%;
     justify-content: flex-start;
+  }
+
+  #input-content {
+    width: 80%;
+    margin-right: 100px;
   }
 
   .trybewarts-login {
@@ -421,10 +429,16 @@ hr {
     display: none;
     position: absolute;
     left: 0;
-    width: 675px;
+    min-width: 675px;
+    max-width: 768px;
     top: 60px;
     background-color: rgb(50, 167, 145);
     height: 70px;
+  }
+
+  #evaluation-form {
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 
   #email , #password {
@@ -440,6 +454,37 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  #trybewarts-forms-logo {
+    display: none;
+  }
+
+  #label-rate {
+    width: 100%;
+  }
+
+  #rates {
+    width: 100%;
+  }
+
+  #input-name , #input-email , #input-lastname , button , #password , #email {
+    font-size: 25px;
+  }
+
+  #input-content input {
+    width: 20px;
+    height: 20px;
+  }
+
+  #radio input , #rates input {
+    width: 20px;
+    height: 20px;
+  }
+
+  #agreement {
+    width: 20px;
+    height: 20px;
   }
 
 }
