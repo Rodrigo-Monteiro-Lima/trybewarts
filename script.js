@@ -70,3 +70,13 @@ btnSubmit.addEventListener('click', (event) => {
   observation.innerHTML = text;
   changeDisplay();
 });
+
+const login = document.querySelector('.trybewarts-login');
+const menuMobile = document.querySelector('#menu-mobile');
+menuMobile.addEventListener('click', () => {
+  if (login.style.display === 'flex') {
+    login.style.display = 'none';
+  } else {
+    login.style.display = 'flex';
+  }
+});

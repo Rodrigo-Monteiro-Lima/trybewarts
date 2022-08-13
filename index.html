@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Trybewarts</title>
   </head>
@@ -15,55 +18,56 @@
         alt=""
       />
       <h1 id="trybewarts-header-title">Trybewarts</h1>
-      <form class="trybewarts-login" action="POST">
-        <div id="name-header">
-          <label for="email">
-            <input type="email" name="email" id="email" placeholder="Email" />
-          </label>
+      <div id="mobile-login">
+        <div id="menu-mobile">
+          <div class="mm-line"></div>
+          <div class="mm-line"></div>
+          <div class="mm-line"></div>
         </div>
-        <div id="password-header">
-          <label for="password">
-            <input
-              type="password"
-              name="password"
-              placeholder="Senha"
-              id="password"
-            />
-          </label>
-        </div>
-        <button id="login">Entrar</button>
-      </form>
+        <form class="trybewarts-login" action="">
+          <div id="name-header">
+            <label for="email">
+              <input type="email" name="email" id="email" placeholder="Email" />
+            </label>
+            <label for="password">
+              <input
+                type="password"
+                name="password"
+                placeholder="Senha"
+                id="password"
+              />
+            </label>
+          </div>
+          <button id="login">Entrar</button>
+        </form>
+      </div>
     </header>
     <main>
-      <form action="" id="evaluation-form">
+      <form action="" id="evaluation-form" method="GET">
         <div id="container">
           <h2>Fomulário de Avaliação</h2>
           <section id="name-email-select">
             <div id="name-lastname">
               <div id="name-form">
                 <label for="input-name">
-                  <input type="text" id="input-name" placeholder="Nome" required/>
+                  <input type="text" id="input-name" placeholder="Nome" name="name" required />
                 </label>
               </div>
               <div id="lastname-form">
                 <label for="input-lastname">
-                  <input
-                    type="text"
-                    id="input-lastname"
-                    placeholder="Sobrenome"
-                  required/>
+                  <input type="text" id="input-lastname" placeholder="Sobrenome" name="lastname" required />
                 </label>
               </div>
             </div>
             <div id="email-select">
               <div id="email-form">
                 <label for="input-email">
-                  <input type="email" id="input-email" placeholder="Email" required/>
+                  <input type="email" id="input-email" placeholder="Email" name="email" required />
                 </label>
               </div>
               <div id="select">
                 <p>Casa</p>
-                <select name="" id="house">
+                <select name="select" id="house">
                   <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                   <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
                   <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -76,88 +80,35 @@
             <div id="radio">
               <label id="label-family">Qual sua família?</label>
               <label for="family1">
-                <input
-                  type="radio"
-                  name="family"
-                  value="Frontend"
-                  id="family1"
-                  required/>Família Frontend
+                <input type="radio" name="family" value="Frontend" id="family1" required /> Família Frontend
               </label>
               <label for="family2">
-                <input
-                  type="radio"
-                  name="family"
-                  value="Backend"
-                  id="family2"
-                  required/>Família Backend
+                <input type="radio" name="family" value="Backend" id="family2" required /> Família Backend
               </label>
               <label for="family3">
-                <input
-                  type="radio"
-                  name="family"
-                  value="FullStack"
-                  id="family3"
-                  required/>Família FullStack
+                <input type="radio" name="family" value="FullStack" id="family3" required /> Família FullStack
               </label>
             </div>
             <div id="checkbox">
-              <label for="" id="label-content"
-                >Qual conteúdo você está com mais vontade de aprender?</label
-              >
+              <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
               <div id="input-content">
                 <label for="hofs">
-                  <input
-                    type="checkbox"
-                    name="hofs"
-                    value="HoFs"
-                    class="subject"
-                    id="hofs"
-                    required/>HoFs
+                  <input type="checkbox" name="hofs" value="HoFs" class="subject" id="hofs" required /> HoFs
                 </label>
                 <label for="jest">
-                  <input
-                    type="checkbox"
-                    name="Jest"
-                    value="Jest"
-                    class="subject"
-                    id="jest"
-                    required/>Jest
+                  <input type="checkbox" name="Jest" value="Jest" class="subject" id="jest" required /> Jest
                 </label>
                 <label for="promises">
-                  <input
-                    type="checkbox"
-                    name="promises"
-                    value="Promises"
-                    class="subject"
-                    id="promises"
-                    required/>Promises
+                  <input type="checkbox" name="promises" value="Promises" class="subject" id="promises" required /> Promises
                 </label>
                 <label for="react">
-                  <input
-                    type="checkbox"
-                    name="react"
-                    value="React"
-                    class="subject"
-                    id="react"
-                    required/>React
+                  <input type="checkbox" name="react" value="React" class="subject" id="react" required /> React
                 </label>
                 <label for="sql">
-                  <input
-                    type="checkbox"
-                    name="sql"
-                    value="SQL"
-                    class="subject"
-                    id="sql"
-                    required/>SQL
+                  <input type="checkbox" name="sql" value="SQL" class="subject" id="sql" required /> SQL
                 </label>
                 <label for="python">
-                  <input
-                    type="checkbox"
-                    name="python"
-                    value="Python"
-                    class="subject"
-                    id="python"
-                    required/>Python
+                  <input type="checkbox" name="python" value="Python" class="subject" id="python" required /> Python
                 </label>
               </div>
             </div>
@@ -165,48 +116,42 @@
           <section id="avaliation">
             <label for="" id="label-rate">Como você avalia a Trybewarts?</label
             >
-            <label for="rate1">
-              <input type="radio" name="rate" value="1" id="rate1" required/>1
-            </label>
-            <label for="rate2">
-              <input type="radio" name="rate" value="2" id="rate2" required/>2
-            </label>
-            <label for="rate3">
-              <input type="radio" name="rate" value="3" id="rate3" required/>3
-            </label>
-            <label for="rate4">
-              <input type="radio" name="rate" value="4" id="rate4" required/>4
-            </label>
-            <label for="rate5">
-              <input type="radio" name="rate" value="5" id="rate5" required/>5
-            </label>
-            <label for="rate6">
-              <input type="radio" name="rate" value="6" id="rate6" required/>6
-            </label>
-            <label for="rate7">
-              <input type="radio" name="rate" value="7" id="rate7" required/>7
-            </label>
-            <label for="rate8">
-              <input type="radio" name="rate" value="8" id="rate8" required/>8
-            </label>
-            <label for="rate9">
-              <input type="radio" name="rate" value="9" id="rate9" required/>9
-            </label>
-            <label for="rate10">
-              <input type="radio" name="rate" value="10" id="rate10" required/>10
-            </label>
+            <div id="rates">
+              <label for="rate1">
+                <input type="radio" name="rate" value="1" id="rate1" required /> 1
+              </label>
+              <label for="rate2">
+                <input type="radio" name="rate" value="2" id="rate2" required /> 2
+              </label>
+              <label for="rate3">
+                <input type="radio" name="rate" value="3" id="rate3" required /> 3
+              </label>
+              <label for="rate4">
+                <input type="radio" name="rate" value="4" id="rate4" required /> 4
+              </label>
+              <label for="rate5">
+                <input type="radio" name="rate" value="5" id="rate5" required /> 5
+              </label>
+              <label for="rate6">
+                <input type="radio" name="rate" value="6" id="rate6" required /> 6
+              </label>
+              <label for="rate7">
+                <input type="radio" name="rate" value="7" id="rate7" required /> 7
+              </label>
+              <label for="rate8">
+                <input type="radio" name="rate" value="8" id="rate8" required /> 8
+              </label>
+              <label for="rate9">
+                <input type="radio" name="rate" value="9" id="rate9" required /> 9
+              </label>
+              <label for="rate10">
+                <input type="radio" name="rate" value="10" id="rate10" required /> 10
+              </label>
+            </div>
           </section>
           <section id="txtarea">
             <label for="textarea" class="textarea">Deixe seu comentário:</label>
-            <textarea
-              name="textarea"
-              id="textarea"
-              class="textarea"
-              cols="30"
-              rows="10"
-              maxlength="500"
-              placeholder="Escreva seu comentário aqui"
-              required></textarea>
+            <textarea name="textarea" id="textarea" class="textarea" cols="30" rows="10" maxlength="500" placeholder="Escreva seu comentário aqui" required ></textarea>
             <div id="counter">500</div>
           </section>
           <section id="validation">

@@ -5,6 +5,12 @@
   font-size: 100%;
 }
 
+body {
+  min-width: fit-content;
+  background-image: url('/images/wallpaperflare.com_wallpaper.jpg');
+  background-size: cover;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -37,8 +43,16 @@ main {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
+  margin-top: 10px;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(50deg, rgba(255, 255, 255, 0.3)
+  12%, rgba(255, 255, 255, 0.3) 77%);
+  box-shadow: 0 4px 24px 1px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(5px);
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  padding-left: 0;
 }
 
 main img {
@@ -60,7 +74,7 @@ main img {
 #radio-checkbox {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 #radio {
@@ -78,11 +92,24 @@ main img {
 #input-content {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  width: 211px;
+  align-self: flex-end;
 }
 
 #select {
   display: flex;
+  outline: none;
+  border: 0;
+}
+
+#rates {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+#rates label {
+  margin-left: 3px;
 }
 
 #form-data {
@@ -90,12 +117,25 @@ main img {
   display: none;
   font-size: 20px;
   height: 525px;
+  background: linear-gradient(50deg, rgba(255, 255, 255, 0.3)
+  12%, rgba(255, 255, 255, 0.3) 77%);
+  box-shadow: 0 4px 24px 1px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(5px);
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  padding-left: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#observation-data {
+  display: block;
 }
 
 #info-container {
   width: 60%;
-  margin-left: 200px;
-  margin-top: 40px;
+  margin-left: 150px;
+  margin-top: 30px;
 }
 
 #password , #email {
@@ -140,8 +180,14 @@ footer {
 
 #counter {
   position: absolute;
-  bottom: 105px;
-  left: 593px;
+  bottom: 95px;
+  left: 533px;
+}
+
+#label-content {
+  width: 211px;
+  align-self: flex-end;
+  line-height: 1.5;
 }
 
 #submit-btn {
@@ -154,11 +200,16 @@ footer {
 }
 
 #name-email-select {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+#label-rate {
+  width: 170px;
 }
 
 #avaliation {
   margin-bottom: 10px;
+  display: flex;
 }
 
 #validation {
@@ -171,10 +222,11 @@ h2 {
   text-align: center;
   margin-bottom: 15px;
   margin-top: 15px;
+  font-family: Aclonica, sans-serif;
 }
 
 #house {
-  width: 170px;
+  width: 160px;
   margin-left: 5px;
   border-radius: 5px;
 }
@@ -191,14 +243,11 @@ h2 {
   margin-bottom: 10px;
 }
 
-#label-content {
-  line-height: 1.5;
-}
-
 #input-name , #input-lastname , #input-email {
   height: 30px;
   border-radius: 5px;
-  border-color: rgb(119, 113, 113);
+  border: 0;
+  padding-left: 5px;
 }
 
 p {
@@ -219,6 +268,9 @@ p {
 #textarea {
   resize: none;
   cursor: pointer;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
 }
 
 input , button , #label-infos {
@@ -229,6 +281,165 @@ input , button , #label-infos {
   cursor: pointer;
 }
 
+#input-content label {
+  margin-left: 10px;
+}
+
 #radio label:not( #label-family ) {
   cursor: pointer;
+}
+
+hr {
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+#menu-mobile {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.mm-line {
+  height: 2px;
+  background-color: white;
+}
+
+#mobile-login {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and ( max-width : 768px ) {
+
+  .header {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+
+  .trybewarts-header-logo {
+    width: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  #name-lastname {
+    flex-direction: column;
+  }
+
+  #name-lastname input {
+    width: 500px;
+    height: 40px;
+  }
+
+  #email-select {
+    flex-direction: column;
+  }
+
+  #email-select input {
+    width: 500px;
+    height: 40px;
+  }
+
+  #select {
+    width: 500px;
+    margin-top: 10px;
+  }
+
+  #select p {
+    font-size: 35px;
+  }
+
+  #select select {
+    width: 500px;
+    height: 40px;
+  }
+
+  #input-email {
+    margin-top: 10px;
+  }
+
+  #radio-checkbox {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  #name-email-select {
+    margin-bottom: 30px;
+  }
+
+  #radio {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  #checkbox {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  #avaliation {
+    font-size: 30px;
+    flex-direction: column;
+  }
+
+  #txtarea {
+    font-size: 30px;
+  }
+
+  #validation {
+    font-size: 30px;
+  }
+
+  #submit-btn {
+    height: 60px;
+  }
+
+  #counter {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  footer {
+    font-size: 25px;
+  }
+
+  #label-content , #input-content {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .trybewarts-login {
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 675px;
+    top: 60px;
+    background-color: rgb(50, 167, 145);
+    height: 70px;
+  }
+
+  #email , #password {
+    width: 200px;
+  }
+
+  #login {
+    width: 160px;
+    margin-top: 10px;
+  }
+
+  #menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
 }
