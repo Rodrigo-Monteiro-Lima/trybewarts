@@ -100,3 +100,19 @@ menuMobile.addEventListener('click', () => {
     login.style.display = 'flex';
   }
 });
+
+// const validateForm = () => {
+//   const name = document.forms["myForm"]["name"].value;
+//   const lastName = document.forms["myForm"]["lastname"].value;
+//   const email = document.forms["myForm"]["email"].value;
+//   if (name == "") {
+//     alert("Name must be filled out");
+//     return false;
+//   } else if (lastName === '') {
+//     alert("Lastname must be filled out");
+//     return false;
+//   } else if (email === '') {
+//     alert("Email must be filled out");
+//     return false;
+//   }
+// }
